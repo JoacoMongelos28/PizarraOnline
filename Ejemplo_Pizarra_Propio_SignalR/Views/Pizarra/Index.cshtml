@@ -1,0 +1,30 @@
+﻿@using Grupo7_Pizarra_SignalR_Data;
+@model List<Grupo7_Pizarra_SignalR_Data.Entidades.Sala>
+@{
+    Layout = "_PizarraLayout";
+    var nombre = TempData["nombre"];
+}
+<div>
+    <h1>¡Bienvenido, @nombre!</h1>
+</div>
+
+<form action="/Pizarra/CrearSala" method="post">
+    <div class="col-md-8 d-flex">
+        <input type="text" class="form-control me-2 col-md-6" id="sala" name="sala" placeholder="Nombre de la sala">
+        <button class="btn btn-primary col-md-3 ml-2" id="crear">¡Crea y unite a una nueva sala!</button>
+    </div>
+</form>
+
+@if (ViewBag.Salas.Count > 0)
+{
+    <div class="form-group">
+        <form action="/Pizarra/PizarraColaborativa" method="post">
+        @foreach (var sala in ViewBag.Salas)
+        {            
+                <input for="salaInput" type="hidden" name="salaInput" value="@sala" id="salaInput"/>
+                <button type="submit" class="btn btn-primary mr-1 mb-1" id="crearSala">@sala</button>
+        }
+        </form>
+    </div>
+    
+}
