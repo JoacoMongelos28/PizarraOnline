@@ -1,0 +1,22 @@
+﻿@{
+    Layout = "_PizarraLayout";
+}
+
+<div class="pizarra-background">
+    <div class="container pizarra-form">
+        <h1 class="display-4 mb-4 estilo-h1 text-center">Bienvenido a la Pizarra</h1>
+        <form action="/Pizarra/PizarraColaborativa" method="post" id="validacion-usuario">
+            <div>
+                <label for="nombre" class="form-label">Nombre:</label>
+                <input class="form-control" type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre">
+            </div>
+            <span id="error-usuario" class="fade-transition">El campo de nombre no puede estar vacío.</span>
+            <div class="text-center">
+                <button type="submit" class="btn-ingresar">Ingresar</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<link href="~/css/index.css" rel="stylesheet" />
+<script src="~/js/validacion.js"></script>

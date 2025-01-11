@@ -1,0 +1,133 @@
+﻿body {
+    background-color: #9bb696;
+}
+
+.container-prepizarra {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #2E8B57;
+    border: 20px solid #8B4513;
+    border-radius: 1%;
+    color: #fff;
+    height: 100vh;
+    margin: 3rem 0;
+}
+
+.class-titulo-en-sala {
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+#crearSala {
+    background-color: #6c757d;
+    color: #ffffff;
+}
+
+#error-sala {
+    color: red;
+    display: none;
+    font-size: 1em;
+    margin-top: 5px;
+}
+
+.buttom-style-custom {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1em;
+    color: white;
+    background-color: #222222;
+    transition: transform 0.3s ease;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+    .buttom-style-custom:hover {
+        transform: scale(1.05);
+        background: #1E1E1E;
+    }
+
+    .buttom-style-custom:active {
+        transform: scale(0.95);
+    }
+
+#salir {
+    margin-bottom: -80px;
+    margin-top: 10px;
+    color: #fff;
+}
+
+#contenedor-principal {
+    margin: 90px auto 140px;
+    padding-left: 15px;
+}
+
+#divPizarra {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.contenedor-pizarra {
+    padding-left: 0;
+}
+
+.pizarra {
+    background-color: #2E8B57;
+    border-radius: 5px;
+    border: 10px solid #8B4513;
+}
+
+.contenedor-notepad {
+    margin-left: 10px;
+    width: 25%;
+}
+
+#notepad {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+#usuariosContainer {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#usuariosConectados {
+    height: 135px;
+    background-color: #f8f9fa;
+    padding: 10px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    overflow-y: auto;
+}
+
+#messagesList {
+    padding: 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    height: 160px;
+    background-color: #f8f9fa;
+    overflow-y: auto;
+}
+
+    #messagesList div {
+        padding: 8px;
+        border-bottom: 1px solid #eee;
+    }
+
+#error-message {
+    display: none;
+}
+
+@media screen and (max-width: 1200px) {
+    .contenedor-notepad {
+        margin-left: auto;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 80px;
+    }
+}

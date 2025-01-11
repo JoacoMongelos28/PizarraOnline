@@ -1,0 +1,83 @@
+﻿@{
+    Layout = "_PizarraLayout";
+    var nombre = TempData["nombre"];
+}
+
+<div id="container-prepizarra" class="container-prepizarra">
+
+    <div>
+        <h1 id="h1-fuera-de-sala" class="mt-5">¡Bienvenido, @nombre!</h1>
+        <h1 id="h1-en-sala" hidden="true"></h1>
+    </div>
+
+    <div class="row my-4" id="divNombreSala">
+        <div>
+            <input type="text" class="px-3 py-2 rounded border-0" id="salaInput" placeholder="Nombre de la sala">
+            <button class="px-3 py-2 rounded border-0" id="crearSala">Crear/Unirse a Sala</button>
+            <span id="error-sala">No puede crear una sala sin nombre</span>
+        </div>
+    </div>
+
+    @if (ViewBag.Salas.Count > 0)
+    {
+        <div class="mx-4 my-3" id="divSalasCreadas">
+            @foreach (var sala in ViewBag.Salas)
+            {
+                <input type="text" hidden="true" name="salaCreada" value="@sala" />
+                <button class="mr-2 mb-3 buttom-style-custom" id="unirme">@sala</button>
+            }
+        </div>
+    }
+
+</div>
+
+
+<div id="salir" hidden="true"></div>
+
+<div id="contenedor-principal" class="container">
+    <div class="row" id="divPizarra" hidden="true">
+
+        <div class="contenedor-pizarra">
+            <canvas id="pizarra" class="pizarra" width="800" height="600"</canvas>
+        </div>
+
+        <div class="contenedor-notepad">
+
+            <div id="notepad">
+                <div class="d-flex justify-content-between align-items-baseline mb-2">
+                    <label for="color">Color del trazo</label>
+                    <input type="color" id="color" class="form-control col-6 col-sm-4 col-md-3 ml-1" value="#000000">
+                </div>
+                <div class="d-flex justify-content-between align-items-baseline mb-2">
+                    <label for="size">Grosor del trazo</label>
+                    <input type="number" id="size" class="form-control col-6 col-sm-4 col-md-3 ml-1" value="1" min="1" max="10">
+                </div>
+                <button class="btn btn-secondary btn-block mb-2" id="limpiar">Limpiar</button>
+            </div>
+
+            <div id="usuariosContainer" class="mt-4">
+                <h5 class="text-center">Usuarios Conectados</h5>
+                <div id="usuariosConectados"></div>
+            </div>
+
+            <div id="divChat" class="mt-4 d-flex flex-column">
+                <div id="messagesList" class="mb-2"></div>
+                <div class="input-group mb-2">
+                    <input type="text" id="messageInput" class="form-control" placeholder="Escribe en el chat">
+                    <div>
+                        <button class="btn btn-success" id="sendButton">Enviar</button>
+                    </div>
+                </div>
+                <span id="error-message" class="text-danger">El mensaje no puede estar vacío</span>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<link href="~/css/pizarra.css" rel="stylesheet" />
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="~/js/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/pizarra.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

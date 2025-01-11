@@ -1,0 +1,59 @@
+# Archivos y carpetas de Visual Studio
+vs
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Archivos de compilación
+Pizarra_SignalR/obj
+Pizarra_SignalR/bin
+bin
+obj
+bin/
+obj/
+*.dll
+*.exe
+*.pdb
+*.cache
+*.ilk
+*.log
+*.vspscc
+*.vssscc
+*.config
+
+# Archivos generados por NuGet
+*.nupkg
+*.snupkg
+.nuget/
+packages/
+*.nuget.props
+*.nuget.targets
+
+# Archivos generados por la herramienta de paquete web
+*.publishsettings
+*.wpp.targets
+.project
+.project.user
+.nuget/packages.config
+.nuget/project.assets.json
+
+# Archivos de configuración del entorno
+launchSettings.json
+
+# Archivos generados por el editor de código
+*.csproj.user
+*.csproj.FileListAbsolute.txt
+*.csproj.nuget.dgspec.json
+*.csproj.nuget.g.props
+*.csproj.nuget.g.targets
+.project.nuget.cache
+
+# Archivos temporales
+*.tmp
+*.temp
+
+# Otros archivos innecesarios
+Thumbs.db
+Desktop.ini
