@@ -1,0 +1,77 @@
+﻿body {
+    background-color: #9bb696;
+}
+
+.pizarra-background {
+    background-color: #2E8B57;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 20px solid #8B4513;
+    border-radius: 1%;
+    margin: 3rem 0;
+}
+
+.pizarra-form {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 1%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    width: 100%;
+    border: 5px solid #0a4b26;
+}
+
+.estilo-h1 {
+    color: #0a4b26;
+}
+
+#nombre {
+    border: none;
+    font-size: 1em;
+    transition: 0.5s;
+}
+
+#error-usuario {
+    color: red;
+    font-size: 0.8em;
+    margin-top: 5px;
+    display: none;
+}
+
+.fade-transition {
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+}
+
+    .fade-transition.show {
+        opacity: 1;
+    }
+
+.btn-ingresar {
+    width: 130px;
+    height: 40px;
+    font-size: 1.1em;
+    background-color: #171717;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: all .4s;
+    margin-top: 30px;
+}
+
+    .btn-ingresar:hover {
+        border-radius: 5px;
+        transform: translateY(-10px);
+        box-shadow: 0 7px 0 -2px #ff7f50, 0 15px 0 -4px #0a4b26, 0 16px 10px -3px #0a4b26;
+    }
+
+    .btn-ingresar:active {
+        transition: all 0.2s;
+        transform: translateY(-5px);
+        box-shadow: 0 2px 0 -2px #ff7f50, 0 8px 0 -4px #0a4b26, 0 12px 10px -3px #0a4b26;
+    }

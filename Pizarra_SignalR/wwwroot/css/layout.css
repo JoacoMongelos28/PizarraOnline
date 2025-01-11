@@ -1,0 +1,136 @@
+﻿.container {
+    margin: 90px auto 140px;
+}
+
+.contenedor-nav {
+    align-items: center;
+    background-color: #21212150;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.8rem 7rem 1.8rem 6.2rem;
+    width: 100%;
+}
+
+.logo-txt {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 600;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.contenedor-menu-nav {
+    gap: 1.8rem;
+    display: flex;
+    align-items: center;
+}
+
+.portfolio-a-txt {
+    color: white;
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+.cv-a-txt {
+    background-color: rgb(232 41 91);
+    color: #ffffff;
+    border-radius: 2rem;
+    cursor: pointer;
+    padding: .7rem 4rem !important;
+}
+
+.footer {
+    background-color: #21212150;
+}
+
+.contenedor-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem 8rem;
+}
+
+.joaquin {
+    color: rgb(210 84 117);
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.mongelos {
+    color: rgb(80 89 223);
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.contenedor-principal-redes {
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor-redes {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.linkedin, .github, .email {
+    text-decoration: none;
+    color: inherit;
+    font-size: 2rem;
+}
+
+    .linkedin:hover, .github:hover, .email:hover {
+        color: #ffffff;
+    }
+
+@media screen and (max-width: 1100px) {
+    .logo-txt {
+        font-size: 1.2rem;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .contenedor-menu-nav {
+        flex-direction: column;
+        background-color: #212121;
+        position: absolute;
+        top: 62px;
+        right: 0;
+        width: 100%;
+        padding: 1rem;
+        opacity: 0;
+        transform: translateY(-20px);
+        visibility: hidden;
+        transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+
+        .contenedor-menu-nav.active {
+            opacity: 1;
+            transform: translateY(0);
+            visibility: visible;
+            background-color: #212121f0;
+        }
+
+    .contenedor-nav {
+        padding: 1rem 2rem;
+    }
+
+    .contenedor-footer {
+        display: block;
+    }
+
+    .contenedor-full-nombre {
+        text-align: center;
+    }
+}
