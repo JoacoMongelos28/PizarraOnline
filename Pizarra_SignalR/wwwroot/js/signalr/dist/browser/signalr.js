@@ -450,7 +450,7 @@ class ConsoleLogger {
                     this.out.warn(msg);
                     break;
                 case LogLevel.Information:
-                    this.out.info(msg);
+                    //this.out.info(msg);
                     break;
                 default:
                     // console.debug only goes to attached debuggers in Node, so we use console.log for Trace and Debug
