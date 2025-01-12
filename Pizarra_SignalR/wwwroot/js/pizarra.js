@@ -21,7 +21,11 @@ function unirseASala() {
     divPizarra.removeAttribute("hidden");
     divChat.removeAttribute("hidden");
     divNombreSala.setAttribute("hidden", true);
-    divSalasCreadas.setAttribute("hidden", true);
+
+    if (divSalasCreadas) {
+        divSalasCreadas.setAttribute("hidden", true);
+    }
+    
     btnSalir.textContent = "Salir de la sala";
     btnSalir.className = "btn btn-secondary";
     divSalir.appendChild(btnSalir);
@@ -157,14 +161,6 @@ connection.start().then(function () {
             prevX = currX;
             prevY = currY;
         }
-    });
-
-    connection.invoke("ObtenerDibujos", salaActual).then(function (dibujos) {
-        dibujos.forEach(function (dibujo) {
-            dibujarEnPizarra(dibujo);
-        });
-    }).catch(function (err) {
-        return console.error(err.toString());
     });
 
     canvas.addEventListener("mouseup", function () {
