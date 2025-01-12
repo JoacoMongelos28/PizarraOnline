@@ -11,7 +11,7 @@ Features:<br>
 
 Technologies:<br>
 • Frontend: JavaScript | HTML5 | CSS3 | Bootstrap<br>
-• Backend: ASP.NET Core | SignalR | C# | Entity Framework Core<br><br>
+• Backend: SignalR | ASP.NET Core | Entity Framework Core | C# | SQL Server<br><br>
 
 > [!NOTE]
 > Prerequisites:<br>
