@@ -10,22 +10,28 @@ Features:<br>
 • Collaborative editing: Allows multiple users to interact with the same whiteboard simultaneously.<br><br>
 
 Technologies:<br>
-• Backend: ASP.NET Core | SignalR | C# | Entity Framework Core<br>
-• Frontend: JavaScript | HTML5 | CSS3 | Bootstrap<br><br>
+• Frontend: JavaScript | HTML5 | CSS3 | Bootstrap<br>
+• Backend: ASP.NET Core | SignalR | C# | Entity Framework Core<br><br>
 
 > [!NOTE]
+> Prerequisites:<br>
 >.NET SDK 6.0<br>
->Visual Studio (Opcional)<br>
->SQL Server (Recomendado)
+>Visual Studio (Optional)<br>
+>SQL Server (Recommended)
 
 <br>
 
 > [!IMPORTANT]
 > Steps for the operation of the project:<br>
 >1.	Clone Repository: git clone https://github.com/JoacoMongelos28/PizarraOnline.git<br>
->2.	Abrir la solucion "Pizarra_SignalR.sln"<br>
->3.	Crear Base de Datos en SQL Server con el nombre "Pizarra"<br>
->4.	Ejecutar en SQL Server la query del archivo "Pizarra_Database.sql" que se encuentra en el proyecto "Pizarra_SignalR_Data"<br>
->5.	Ejecutar el siguiente Scaffold en la consola de Administrador de Paquetes en el proyecto "Pizarra_SignalR_Data". (RECORDA PONER EL NOMBRE DE TU SERVIDOR EN EL SCAFFOLD)<br><br>
+>2.	Open the solution "Pizarra_SignalR.sln"<br>
+>3.	Create a database in SQL Server named "Pizarra"<br>
+>4.	Run the SQL query from the file "Pizarra_Database.sql" located in the "Pizarra_SignalR_Data" project in SQL Server<br>
+>5.	Run the following Scaffold in the Package Manager Console in the "Pizarra_SignalR_Data" project. (REMEMBER TO ENTER YOUR SERVER NAME IN THE SCAFFOLD)<br><br>
 Scaffold-DbContext "Server=YOUR_SERVER_NAME;Database=Pizarra;Trusted_Connection=True;Encrypt=False" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Entidades/ -Force <br><br>
->6.	Ejecutar la aplicacion y disfrutar!
+>6.	Run the application and enjoy!
+
+<br>
+
+> [!TIP]
+> If any error occurs with the application, clear the browser cache data and run the application again.
