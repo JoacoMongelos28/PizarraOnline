@@ -10,8 +10,12 @@ Features:<br>
 • Collaborative editing: Allows multiple users to interact with the same whiteboard simultaneously.<br><br>
 
 Technologies:<br>
-• Frontend: JavaScript | HTML5 | CSS3 | Bootstrap<br>
-• Backend: SignalR | ASP.NET Core | Entity Framework Core | C# | SQL Server<br><br>
+• Backend: C#<br>
+• Library: SignalR<br>
+• Database: SQL Server<br>
+• ORM: Entity Framework<br>
+• Frontend: JavaScript | HTML5 | CSS3<br>
+• Frameworks: ASP.NET MVC | Bootstrap<br><br>
 
 > [!NOTE]
 > Prerequisites:<br>
