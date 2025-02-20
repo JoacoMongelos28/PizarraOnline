@@ -13,6 +13,7 @@ Technologies:<br>
 • Backend: C#<br>
 • Library: SignalR<br>
 • Database: SQL Server<br>
+• Template Engine: Razor<br>
 • ORM: Entity Framework<br>
 • Frontend: JavaScript | HTML5 | CSS3<br>
 • Frameworks: ASP.NET MVC | Bootstrap<br><br>
